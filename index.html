@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Contact Book 📕</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="sidebar">
+        <div>
+          <i class="fa-solid fa-arrow-left" id="my-arrow"></i>
+        </div>
+        <ul class="nav-lists">
+          <li id="Home">
+            <i class="fa-solid fa-house" title="Home"></i>
+            <span>Home</span>
+          </li>
+          <li id="js-show-all">
+            <i class="fa-solid fa-address-book" title="Show All Contacts"></i>
+            <span> Show All Contacts</span>
+          </li>
+          <li id="js-search">
+            <i class="fa-solid fa-magnifying-glass" title="Search"></i>
+            <span>Search</span>
+          </li>
+          <li id="js-add-contacts">
+            <i class="fa-solid fa-user" title="Add New Contact"></i>
+
+            <span> Add New Contact</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Content Area -->
+      <div id="main-content">
+        <div id="search-area" class="panel">
+          <form id="search" action="#">
+            <h1>Search Contacts</h1>
+            <div>
+              <label>
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Enter Name of Contact"
+                />
+              </label>
+              <input
+                type="submit"
+                value="Submit"
+                id="submit-search"
+                required=""
+              />
+            </div>
+            <div id="search-display"></div>
+          </form>
+        </div>
+
+        <div id="contact-panel" class="panel">
+          <form id="contact" action="#">
+            <h1>Add a new contact</h1>
+            <div>
+              <label>
+                <input
+                  type="text"
+                  name="person"
+                  id="name"
+                  placeholder="Nabeel Mohammed"
+                  required=""
+                />
+              </label>
+              <label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="number"
+                  placeholder="1234567"
+                  required=""
+                />
+              </label>
+              <label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="nabeel@example.com"
+                  required=""
+                />
+              </label>
+            </div>
+            <div>
+              <input type="submit" value="Submit" id="submit-new-contact" />
+            </div>
+          </form>
+        </div>
+        <div id="show-panel" class="panel"></div>
+      </div>
+    </div>
+  </body>
+</html>
